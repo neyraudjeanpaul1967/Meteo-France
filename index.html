@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <!-- Conteneur principal de la page -->
+    <div class="container">
+      <header>
+        <!-- En-tête avec logo et titre du site -->
+        <div class="logo">
+          <img
+            class="imgLogo"
+            src="./assets/img/7b302fa8-a663-4834-9720-708d43b96eda.png"
+            alt="logo"
+          />
+          <div class="titre-header">
+            <h1 class="titre">Météo de Jean-Paul</h1>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Colonne de gauche : recherche, infos ville, bulletin, périodes -->
+        <div class="main-gauche">
+          <!-- Formulaire de recherche de ville avec autocomplétion -->
+          <form class="valider" action="">
+            <input
+              class="recherche"
+              type="search"
+              placeholder="Tapez votre ville"
+              autocomplete="off"
+            />
+            <ul class="autocomplete-list"></ul>
+            <button class="button">valider</button>
+          </form>
+          <!-- Bloc affichant la ville sélectionnée et son image -->
+          <div class="bloc-ville">
+            <div class="ville-titre">météo ville</div>
+            <img
+              class="img-ville"
+              src="./assets/img/images.jpg"
+              alt="photo ville"
+            />
+          </div>
+          <!-- Bloc affichant le bulletin météo du jour -->
+          <div class="bloc-bulletin">
+            <div class="bulletin">
+              <p>bulletin de la Journée</p>
+              <div class="infos">
+                <p>temps</p>
+                <p>temperatures</p>
+              </div>
+            </div>
+          </div>
+          <!-- Blocs pour les prévisions matin, après-midi, soirée -->
+          <div class="periodes">
+            <div id="matin" class="periode matin">
+              <p class="label">Matin</p>
+            </div>
+            <div id="apres" class="periode apres">
+              <p class="label">Après midi</p>
+            </div>
+            <div id="soir" class="periode soir">
+              <p class="label">Soiré</p>
+            </div>
+          </div>
+        </div>
+        <!-- Colonne de droite : carrousel avec vidéo en fond et image du jour -->
+        <div class="main-droite">
+          <div class="caroussel" id="caroussel">
+            <iframe
+              class="caroussel-bg"
+              src="https://www.youtube.com/embed/Sl6DbRoX9X4?autoplay=1&mute=1&controls=0&loop=1&playlist=Sl6DbRoX9X4"
+              title="Midnight Sun in the Arctic (Time-Lapse)"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+            <button class="caroussel-btn" id="prevBtn">&#8592;</button>
+            <img
+              class="imgCarouselle"
+              id="carousselImg"
+              src="./assets/img/lundi.png"
+              alt="jour"
+            />
+            <button class="caroussel-btn" id="nextBtn">&#8594;</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Pied de page avec mention légale -->
+    <footer class="apropos">
+      <p>Site météo réalisé par Jean-Paul — Tous droits réservés © 2025</p>
+    </footer>
+    <!-- Inclusion du script JavaScript principal -->
+    <script src="./script.js"></script>
+  </body>
+</html>
