@@ -404,6 +404,7 @@ body {
     flex: 3;
     margin: 0;
     font-size: 1em;
+    border-radius: 30px;
   }
 
   /* Bouton de validation adapté */

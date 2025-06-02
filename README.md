@@ -22,8 +22,8 @@ Ce site web permet de consulter la météo quotidienne et les prévisions pour c
 
 - **HTML / CSS** (Flexbox, Media Queries)
 - **JavaScript** (DOM, Fetch API)
-- **API OpenWeatherMap** pour les données météo
-- **API Geo.api.gouv.fr** pour l’autocomplétion des villes
+- **API OpenWeatherMap** pour les données météo,"https://api.openweathermap.org/data/2.5/forecast".
+- **API Geo.api.gouv.fr** pour l’autocomplétion des villes,https://geo.api.gouv.fr/decoupage-administratif/communes.
 - **YouTube** pour la vidéo de fond du carrousel
 
 ## Installation
